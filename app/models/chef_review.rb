@@ -1,0 +1,2 @@
+class ChefReview < ApplicationRecord
+end
