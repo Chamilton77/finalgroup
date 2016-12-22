@@ -1,0 +1,57 @@
+body{
+	background: url("signupfood.jpg") no-repeat center center fixed;
+	background-size: cover;
+	height: 110%;
+	width:100%;
+}
+#wrapper{
+	border: 2px solid green;	
+	width: 500px;
+	margin-left: 650px;	
+	text-align: center;
+	border-radius: 9px;
+	height: 550px;
+	background: rgba(200, 400, 200, 0.6);
+}
+.subttn{
+	width: 200px;
+	border-radius: 4px;
+	border: 2px solid green;
+	background-color: lightgreen;
+	text-align: center;
+}
+.sufname{
+	width: 275px;
+	border-radius: 4px;
+	border: 2px solid lightblue;
+	outline: none;
+	text-align: center;
+}
+.sulname{
+	width: 275px;
+	border-radius: 4px;
+	border: 2px solid lightblue;
+	outline: none;
+	text-align: center;
+}
+.suemail{
+	width: 275px;
+	border-radius: 4px;
+	border: 2px solid lightblue;
+	outline: none;
+	text-align: center;
+}
+.suspec{
+	width: 275px;
+	border-radius: 4px;
+	border: 2px solid lightblue;
+	outline: none;
+	text-align: center;
+}
+.supass{
+	width: 275px;
+	border-radius: 4px;
+	border: 2px solid lightblue;
+	outline: none;
+	text-align: center;
+}
