@@ -20,7 +20,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Mr.Chef-O</a>
+	      <%= link_to "Chef-O", root_path %>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -39,7 +39,7 @@
 	          <ul class="dropdown-menu">
 	            <li><a href="#">Profile</a></li>
 	            <li><a href="#">Settings</a></li>
-	            <li><a href="#">Contact Us</a></li>
+	            <li><%= link_to "Contact Us", contact_index_path %></li>
 	            <li role="separator" class="divider"></li>
 	            <li><%= link_to "Log Out", destroy_user_session_path, method: :delete  %></li>
 	          </ul>
@@ -76,9 +76,9 @@
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="#">Profile</a></li>
-	            <li><a href="#">Settings</a></li>
-	            <li><a href="#">Contact Us</a></li>
+	            <li><%= link_to "Profile", chefs_index_path %>></li>
+	            <li><%= link_to "Settings", edit_chef_registration_path %></li>
+	            <li><%= link_to "Contact Us", contact_index_path %></li>
 	            <li role="separator" class="divider"></li>
 	            <li><%= link_to "Log Out", destroy_chef_session_path, method: :delete %></li>
 	          </ul>
