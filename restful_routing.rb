@@ -1,4 +1,11 @@
-
+                 Prefix Verb   URI Pattern                    Controller#Action
+          contacts_index GET    /contacts/index(.:format)      contacts#index
+           contacts_show GET    /contacts/show(.:format)       contacts#show
+             chefs_index GET    /chefs/index(.:format)         chefs#index
+              chefs_show GET    /chefs/show(.:format)          chefs#show
+        new_chef_session GET    /chefs/sign_in(.:format)       chefs/sessions#new
+            chef_session POST   /chefs/sign_in(.:format)       chefs/sessions#create
+    destroy_chef_session DELETE /chefs/sign_out(.:format)      chefs/sessions#destroy
        new_chef_password GET    /chefs/password/new(.:format)  devise/passwords#new
       edit_chef_password GET    /chefs/password/edit(.:format) devise/passwords#edit
            chef_password PATCH  /chefs/password(.:format)      devise/passwords#update

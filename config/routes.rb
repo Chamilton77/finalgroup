@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'contacts/index'
+
+  get 'contacts/show'
+
+  get 'chefs/index'
+
+  get 'chefs/show'
+
   devise_for :chefs, controllers: {
   		sessions: 'chefs/sessions',
         registrations: 'chefs/registrations'
