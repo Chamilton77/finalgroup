@@ -1,15 +1,11 @@
 Rails.application.routes.draw do
-  get 'contact/index'
-
-  get 'chefs/index'
-
-  get 'chefs/show'
-
   devise_for :chefs, controllers: {
+  		sessions: 'chefs/sessions',
         registrations: 'chefs/registrations'
       }
 
   devise_for :users, controllers: {
+  		sessions: 'users/sessions',
         registrations: 'users/registrations'
       }
 
