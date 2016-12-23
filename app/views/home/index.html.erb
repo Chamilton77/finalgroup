@@ -1,17 +1,15 @@
 
 <div class="col-md-offset-1 col-md-4">
 	<h2>Are you a Chef?</h2>
-	<%= form_for( chef_session_path) do |f| %>
-	    <div class="field">
-	    	<%= f.label :email %><br />
-	    	<%= f.email_field :email, autofocus: true, :class => "btn btn-default" %>
+	<%= form_for( @chef, url: new_chef_session_path) do |f| %>
+	    <div class="field">	    	
+	    	<%= f.email_field :email, placeholder: "Email", autofocus: true, :class => "btn btn-default" %>
 	    </div>
-
+		<br />
 	    <div class="field">
-	    	<%= f.label :password %><br />
-	    	<%= f.password_field :password, autocomplete: "off", :class => "btn btn-default" %><br />
+	    	<%= f.password_field :password, placeholder: "Password", autocomplete: "off", :class => "btn btn-default" %><br />
 	    </div>
-
+		<br />
 	    <div class="actions">
 	    	<%= f.submit "Log in", :class => "btn btn-default" %>
 	    </div>
@@ -20,20 +18,22 @@
 </div>
 <div class="col-md-offset-2 col-md-4">
   	<h2>Are you looking for a Chef?</h2>
-  	<%= form_for(user_session_path(@user)) do |f| %>
-	    <div class="field">
-	    	<%= f.label :email %><br />
-	    	<%= f.email_field :email, autofocus: true, :class => "btn btn-default" %>
+  	<%= form_for(@user, url: user_session_path ) do |f| %>
+	    <div class="field" >
+	    	
+	    	<%= f.email_field :email, placeholder: "Email", :class => "btn btn-default" %> <br />
 	    </div>
-
+		<br />
 	    <div class="field">
-	    	<%= f.label :password %><br />
-	    	<%= f.password_field :password, autocomplete: "off", :class => "btn btn-default"%>
+	    	
+	    	<%= f.password_field :password, placeholder: "Password", :class => "btn btn-default" %> <br />
 	    </div>
-
+		<br />
 	    <div class="actions">
 	    	<%= f.submit "Log in", :class => "btn btn-default" %>
 	    </div>
 	<% end %>
 	<h3><%= link_to "Create Account".html_safe, new_user_registration_path, :id => "button_id", :class => "btn btn-default" %></h3>
 </div>
+
+
