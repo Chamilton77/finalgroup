@@ -4,6 +4,17 @@ body{
 	height: 110%;
 	width:100%;
 }
+.navbar{
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
+	height: 80px;
+	padding: 15px;
+	font-size: 20px;
+	color: white;
+}
+.textc{
+	color: white;
+}
 #wrapper{
 	border: 2px solid green;	
 	width: 500px;
@@ -11,7 +22,7 @@ body{
 	text-align: center;
 	border-radius: 9px;
 	height: 550px;
-	background: rgba(200, 400, 200, 0.6);
+	background: rgba(200, 200, 200, 0.6);
 }
 .subttn{
 	width: 200px;
