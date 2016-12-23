@@ -20,7 +20,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <%= link_to "Chef-O", root_path %>
+	      <%= link_to "Mr.Chef-O", root_path, :class => "logo" %>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,12 +33,12 @@
 	      </form>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="#">Make a request</a></li>
-	        <li><a href="#">Chefs</a></li>
+	        <li><%= link_to "Chefs", users_index_path %></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="#">Profile</a></li>
-	            <li><a href="#">Settings</a></li>
+	            <li><%= link_to "Profile", users_show_path %></li>
+	            <li><%= link_to "Settings", edit_user_registration_path %></li>
 	            <li><%= link_to "Contact Us", contacts_index_path %></li>
 	            <li role="separator" class="divider"></li>
 	            <li><%= link_to "Log Out", destroy_user_session_path, method: :delete  %></li>
@@ -76,7 +76,7 @@
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><%= link_to "Profile", chefs_index_path %></li>
+	            <li><%= link_to "Profile", chefs_show_path %></li>
 	            <li><%= link_to "Settings", edit_chef_registration_path %></li>
 	            <li><%= link_to "Contact Us", contacts_index_path %></li>
 	            <li role="separator" class="divider"></li>
