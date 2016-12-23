@@ -6,17 +6,17 @@
 
       <div class="field">
         <%= f.label :First_Name %><br />
-        <%= f.text_field :fname, autofocus: true, :class => "sufname" %>
+        <%= f.text_field :fname, autofocus: true, :class => "su" %>
       </div>
         <br>
         <div class="field">
         <%= f.label :Last_name %><br />
-        <%= f.text_field :lname, :class => "sulname" %>
+        <%= f.text_field :lname, :class => "su" %>
       </div>
       <br>
       <div class="field">
         <%= f.label :email %><br />
-        <%= f.email_field :email, :class => "suemail" %>
+        <%= f.email_field :email, :class => "su" %>
       </div>
       <br>
       <div class="field">
@@ -24,12 +24,12 @@
         <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "off", :class => "supass" %>
+        <%= f.password_field :password, autocomplete: "off", :class => "su" %>
       </div>
       <br>
       <div class="field">
         <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off", :class => "supass" %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", :class => "su" %>
       </div>
       <br>
       <div class="actions"> 

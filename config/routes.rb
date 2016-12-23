@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'chefs/index'
+
+  get 'chefs/show'
+
   devise_for :chefs, controllers: {
         registrations: 'chefs/registrations'
       }

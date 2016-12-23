@@ -15,14 +15,27 @@ body{
 .textc{
 	color: white;
 }
+#edittitle{
+	color: white;
+}
 #wrapper{
 	border: 2px solid green;	
 	width: 500px;
-	margin-left: 650px;	
+	margin-left: 750px;	
 	text-align: center;
 	border-radius: 9px;
 	height: 550px;
-	background: rgba(200, 200, 200, 0.6);
+	background: rgba(170, 232, 129, 0.5);
+}
+#editwrapper{
+	border: 2px solid green;	
+	width: 850px;
+	margin-left: 325px;	
+	text-align: center;
+	border-radius: 9px;
+	height: 500px;
+	background: rgba(170, 232, 129, 0.5);
+	padding-top: 10px;
 }
 .subttn{
 	width: 200px;
@@ -31,38 +44,14 @@ body{
 	background-color: lightgreen;
 	text-align: center;
 }
-.sufname{
+.su{
 	width: 275px;
 	border-radius: 4px;
 	border: 2px solid lightblue;
 	outline: none;
 	text-align: center;
 }
-.sulname{
-	width: 275px;
-	border-radius: 4px;
-	border: 2px solid lightblue;
-	outline: none;
-	text-align: center;
-}
-.suemail{
-	width: 275px;
-	border-radius: 4px;
-	border: 2px solid lightblue;
-	outline: none;
-	text-align: center;
-}
-.suspec{
-	width: 275px;
-	border-radius: 4px;
-	border: 2px solid lightblue;
-	outline: none;
-	text-align: center;
-}
-.supass{
-	width: 275px;
-	border-radius: 4px;
-	border: 2px solid lightblue;
-	outline: none;
-	text-align: center;
+#edit1{
+	float: left;
+	margin-left:100px;
 }
