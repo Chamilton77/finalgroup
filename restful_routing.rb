@@ -1,4 +1,6 @@
-                 Prefix Verb   URI Pattern                    Controller#Action
+ Prefix Verb   URI Pattern                    Controller#Action
+             users_index GET    /users/index(.:format)         users#index
+              users_show GET    /users/show(.:format)          users#show
           contacts_index GET    /contacts/index(.:format)      contacts#index
            contacts_show GET    /contacts/show(.:format)       contacts#show
              chefs_index GET    /chefs/index(.:format)         chefs#index
