@@ -5,34 +5,36 @@
 	<%= form_for( chef_session_path) do |f| %>
 	    <div class="field">
 	    	<%= f.label :email %><br />
-	    	<%= f.email_field :email, autofocus: true %>
+	    	<%= f.email_field :email, autofocus: true, :class => "btn btn-default" %>
 	    </div>
 
 	    <div class="field">
 	    	<%= f.label :password %><br />
-	    	<%= f.password_field :password, autocomplete: "off" %>
+	    	<%= f.password_field :password, autocomplete: "off", :class => "btn btn-default" %><br />
 	    </div>
 
 	    <div class="actions">
-	    	<%= f.submit "Log in" %>
+	    	<%= f.submit "Log in", :class => "btn btn-default" %>
 	    </div>
 	<% end %>
+	<h3><%= link_to "Create Account".html_safe, new_chef_registration_path, :id => "button_id", :class => "btn btn-default" %></h3> 
 </div>
 <div class="col-md-offset-2 col-md-4">
   	<h2>Are you looking for a Chef?</h2>
   	<%= form_for(user_session_path(@user)) do |f| %>
 	    <div class="field">
 	    	<%= f.label :email %><br />
-	    	<%= f.email_field :email, autofocus: true %>
+	    	<%= f.email_field :email, autofocus: true, :class => "btn btn-default" %>
 	    </div>
 
 	    <div class="field">
 	    	<%= f.label :password %><br />
-	    	<%= f.password_field :password, autocomplete: "off" %>
+	    	<%= f.password_field :password, autocomplete: "off", :class => "btn btn-default"%>
 	    </div>
 
 	    <div class="actions">
-	    	<%= f.submit "Log in" %>
+	    	<%= f.submit "Log in", :class => "btn btn-default" %>
 	    </div>
 	<% end %>
+	<h3><%= link_to "Create Account".html_safe, new_user_registration_path, :id => "button_id", :class => "btn btn-default" %></h3>
 </div>
