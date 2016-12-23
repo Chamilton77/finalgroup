@@ -1,4 +1,4 @@
-                  Prefix Verb   URI Pattern                    Controller#Action
+           contact_index GET    /contact/index(.:format)       contact#index
              chefs_index GET    /chefs/index(.:format)         chefs#index
               chefs_show GET    /chefs/show(.:format)          chefs#show
         new_chef_session GET    /chefs/sign_in(.:format)       devise/sessions#new
