@@ -1,6 +1,9 @@
-        new_chef_session GET    /chefs/sign_in(.:format)       devise/sessions#new
-            chef_session POST   /chefs/sign_in(.:format)       devise/sessions#create
-    destroy_chef_session DELETE /chefs/sign_out(.:format)      devise/sessions#destroy
+Prefix Verb   URI Pattern                    Controller#Action
+             users_index GET    /users/index(.:format)         users#index
+              users_show GET    /users/show(.:format)          users#show
+        new_chef_session GET    /chefs/sign_in(.:format)       chefs/sessions#new
+            chef_session POST   /chefs/sign_in(.:format)       chefs/sessions#create
+    destroy_chef_session DELETE /chefs/sign_out(.:format)      chefs/sessions#destroy
        new_chef_password GET    /chefs/password/new(.:format)  devise/passwords#new
       edit_chef_password GET    /chefs/password/edit(.:format) devise/passwords#edit
            chef_password PATCH  /chefs/password(.:format)      devise/passwords#update
@@ -13,9 +16,9 @@ cancel_chef_registration GET    /chefs/cancel(.:format)        chefs/registratio
                          PUT    /chefs(.:format)               chefs/registrations#update
                          DELETE /chefs(.:format)               chefs/registrations#destroy
                          POST   /chefs(.:format)               chefs/registrations#create
-        new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
-            user_session POST   /users/sign_in(.:format)       devise/sessions#create
-    destroy_user_session DELETE /users/sign_out(.:format)      devise/sessions#destroy
+        new_user_session GET    /users/sign_in(.:format)       users/sessions#new
+            user_session POST   /users/sign_in(.:format)       users/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)      users/sessions#destroy
        new_user_password GET    /users/password/new(.:format)  devise/passwords#new
       edit_user_password GET    /users/password/edit(.:format) devise/passwords#edit
            user_password PATCH  /users/password(.:format)      devise/passwords#update
