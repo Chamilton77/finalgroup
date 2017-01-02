@@ -3,5 +3,6 @@ class ChefsController < ApplicationController
   end
 
   def show
+  	@chef = current_chef
   end
 end

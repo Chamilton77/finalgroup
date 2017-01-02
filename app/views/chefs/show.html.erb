@@ -1,2 +1,97 @@
-<h1>Chefs#show</h1>
-<p>Find me in app/views/chefs/show.html.erb</p>
+<div id="chefwrap">
+	<div class="row" id="rows">
+	  <div class="col-md-3" id="profilepic">
+
+	  </div>
+	  <div class="col-md-6" id="profileinfo">
+	  	<h1 id="cname">Chef: <%= @chef.fname %> <%= @chef.lname %></h1>
+	  	<h3 id="cspec">Specialty: <%= @chef.specialty %></h3>
+	  	<h3 id="cdes">description: </h3>
+	  	<%= @chef.description %>
+	  </div>
+	</div>
+	<br>
+	<div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
+	     aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <!-- Modal Header -->
+	            <div class="modal-header">
+	                <button type="button" class="close" 
+	                   data-dismiss="modal">
+	                       <span aria-hidden="true">&times;</span>
+	                       <span class="sr-only">Close</span>
+	                </button>
+	                <h4 class="modal-title" id="myModalLabel">
+	                    Chef Request
+	                </h4>
+	            </div>
+	            
+	            <!-- Modal Body -->
+	            <div class="modal-body">
+	                
+	                <form class="form-horizontal" role="form">
+	                  <div class="form-group">
+	                    <label  class="col-sm-2 control-label"
+	                              for="inputEmail3">Email</label>
+	                    <div class="col-sm-10">
+	                        <input type="email" class="form-control" 
+	                        id="inputEmail3" placeholder="Email"/>
+	                    </div>
+	                  </div>
+	                  <div class="form-group">
+	                    <label class="col-sm-2 control-label"
+	                          for="guests" >Guests</label>
+	                    <div class="col-sm-10">
+	                        <input type="" class="form-control"
+	                            id="guests" placeholder="How many guests"/>
+	                    </div>
+	                  </div>
+	                  <div class="form-group">
+	                    <label class="col-sm-2 control-label"
+	                          for="foodtype" >Food</label>
+	                    <div class="col-sm-10">
+	                        <input type="" class="form-control"
+	                            id="foodtype" placeholder="What would you like to eat?"/>
+	                    </div>
+	                  </div>
+	                  <div class="form-group">
+	                    <label class="col-sm-2 control-label"
+	                          for="date" >Date</label>
+	                    <div class="col-sm-10">
+	                        <input type="Date" class="form-control"
+	                            id="date" placeholder=""/>
+	                    </div>
+	                  </div>	                  
+	                </form>     
+	            </div>
+	            <!-- Modal Footer -->
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-default"
+	                        data-dismiss="modal">
+	                            Close
+	                </button>
+	                <button type="button" class="btn btn-primary">
+	                    Save changes
+	                </button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<br>
+		<div id=butndiv>
+			<button id="request">Make A Request</button>
+		</div>
+	<br>
+	<br>
+	<div class="row" id="rows">
+	  <div class="col-md-10" id="newreviews">
+
+	  </div>
+	</div>
+	<div class="row" id="rows">
+	  <div class="col-md-10" id="reviews">
+
+	  </div>
+	</div>
+</div>
