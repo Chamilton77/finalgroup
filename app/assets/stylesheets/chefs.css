@@ -58,3 +58,62 @@ body{
 	float: left;
 	margin-left:100px;
 }
+/***************************************************/
+
+#rows{
+	width: 100%;
+}
+#profilepic{
+	background: rgba(170, 232, 129, 0.5);
+	height: 325px;
+	margin-left: 120px;
+}
+#profileinfo{
+	background: rgba(170, 232, 129, 0.7);
+	height: 250px;
+	margin-left: 105px;
+	margin-top: 50px;
+}
+#reviews{
+	background: rgba(170, 232, 129, 0.7);
+	height: 300px; 
+	margin-left: 120px;
+	margin-bottom: 50px;
+}
+#newreviews{
+	background: rgba(170, 232, 129, 0.7);	
+	height: 150px; 
+	margin-left: 120px;
+	margin-bottom: 50px;
+}
+#cname{
+	color: white;
+}
+#request{
+	height: 100px;
+	width: 350px;
+	background: rgba(400, 232, 90, 0.9);
+	box-shadow: 0 9px #666;
+	outline: none;
+	font-size: 24px;
+	border-radius: 4px;
+	border: 2px solid black;
+}
+#request:hover{
+	background: rgba(170, 232, 129, 0.9);
+}
+#request:active {
+  background-color: lightblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#butndiv{
+	margin-left: 35%;
+}
+
+
+
+
+
+
+

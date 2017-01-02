@@ -1,2 +1,3 @@
 class ChefReview < ApplicationRecord
+	
 end
