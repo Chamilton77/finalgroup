@@ -4,8 +4,15 @@ body{
 	height: 110%;
 	width:100%;
 }
-.logo{
+#chefo{
+	color: lightgreen;
 	font-size: 30px;
+	padding-top: 10px;
+}
+#account{
+	color: lightgreen;
+	font-size: 25px;
+	padding-top: 10px;
 }
 .navbar{
 	background: rgba(0, 0, 0, 0.6);
@@ -63,10 +70,20 @@ body{
 #rows{
 	width: 100%;
 }
+#parentpropic{
+	height: 320px;
+	width: 325px;
+	border-radius: 30%
+}
+#propic{
+	height: 100%
+	width: 100%;
+}
 #profilepic{
 	background: rgba(170, 232, 129, 0.5);
 	height: 325px;
 	margin-left: 120px;
+	border-radius: 50%
 }
 #profileinfo{
 	background: rgba(170, 232, 129, 0.7);
@@ -80,16 +97,11 @@ body{
 	margin-left: 120px;
 	margin-bottom: 50px;
 }
-#newreviews{
-	background: rgba(170, 232, 129, 0.7);	
-	height: 150px; 
-	margin-left: 120px;
-	margin-bottom: 50px;
-}
 #cname{
 	color: white;
 }
 #request{
+	float: left;
 	height: 100px;
 	width: 350px;
 	background: rgba(400, 232, 90, 0.9);
@@ -98,6 +110,7 @@ body{
 	font-size: 24px;
 	border-radius: 4px;
 	border: 2px solid black;
+	margin-left: 260px;
 }
 #request:hover{
 	background: rgba(170, 232, 129, 0.9);
@@ -107,11 +120,70 @@ body{
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-#butndiv{
-	margin-left: 35%;
+#newreview{
+	margin-left: 50px;
+	float: left;
+	height: 100px;
+	width: 350px;
+	background: rgba(400, 232, 90, 0.9);
+	box-shadow: 0 9px #666;
+	outline: none;
+	font-size: 24px;
+	border-radius: 4px;
+	border: 2px solid black;
 }
+#newreview:hover{
+	background: rgba(170, 232, 129, 0.9);
+}
+#newreview:active {
+  background-color: lightblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#review{
+	height: 100px;
+}
+#butdiv{
+	height: 120px;
+}
+/***************************************************/
+.cheflog{
+	background:rgba(170, 232, 129, 0.9); 
+	height: 350px;
+	width: 350px;
+	margin-left: 150px;	
+	border-radius: 10px;
+}
+.chefwrap{
+	text-align: center
+}
+.userlog{
+	background:rgba(170, 232, 129, 0.9); 
+	height: 350px;
+	width: 350px;
+	margin-left: 285px;
+	border-radius: 10px;
+}
+.userwrap{
+	text-align: center;
+}
+#chefmail{
+	margin-top: 30px;
+}
+#welcomeword{
+	width: 80%;
+	height: 75px;
+	background:rgba(170, 232, 129, 0.9);
+	border-radius: 10px;
+	font-family: monospace;
+	font-style: italic;
+	font-size: 60px;
+}
+#welcome{
+	text-align: center;
+	margin-left: 210px;
 
-
+}
 
 
 
