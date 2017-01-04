@@ -5,4 +5,7 @@ class ChefsController < ApplicationController
   def show
   	@chef = current_chef
   end
+  def new
+  	@review = Review.new
+  end
 end

@@ -4,4 +4,8 @@
 
 $(document).on 'turbolinks:load', -> 
 	$('#request').on 'click', ->
-		$('.modal').modal()
+		$('.reqmodal').modal()
+
+	$(document).on 'turbolinks:load', -> 
+	$('#newreview').on 'click', ->
+		$('.revmodal').modal()
