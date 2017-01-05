@@ -19,3 +19,11 @@
 #maphead{
 	color: white;
 }
+/***************Chef Gallery**************************/
+.chefwrap{
+	text-align: center;
+}
+#chefgallery{
+	color: white;
+	font-size: 23px;
+}
