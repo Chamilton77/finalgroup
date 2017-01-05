@@ -1,6 +1,4 @@
                   Prefix Verb   URI Pattern                      Controller#Action
-             users_index GET    /users/index(.:format)           users#index
-              chefs_show GET    /chefs/show(.:format)            chefs#show
         new_chef_session GET    /chefs/sign_in(.:format)         chefs/sessions#new
             chef_session POST   /chefs/sign_in(.:format)         chefs/sessions#create
     destroy_chef_session DELETE /chefs/sign_out(.:format)        chefs/sessions#destroy
@@ -31,6 +29,8 @@ cancel_user_registration GET    /users/cancel(.:format)          users/registrat
                          PUT    /users(.:format)                 users/registrations#update
                          DELETE /users(.:format)                 users/registrations#destroy
                          POST   /users(.:format)                 users/registrations#create
+                         GET    /chefs/:chef_id/show(.:format)   chefs#show
+             users_index GET    /users/index(.:format)           users#index
             chef_reviews GET    /chef_reviews(.:format)          chef_reviews#index
                          POST   /chef_reviews(.:format)          chef_reviews#create
          new_chef_review GET    /chef_reviews/new(.:format)      chef_reviews#new
@@ -48,4 +48,3 @@ cancel_user_registration GET    /users/cancel(.:format)          users/registrat
                          PUT    /requests/:id(.:format)          requests#update
                          DELETE /requests/:id(.:format)          requests#destroy
                     root GET    /                                home#index
-
