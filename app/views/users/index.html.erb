@@ -6,19 +6,17 @@
 	</div>
 </div>
 <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-3">   	
-    </div>
-    <div class="col-md-3", id="chefgallery">
-    	<% @chefs.each do |chef| %>
-		    <br>
-    		<%= image_tag chef.avatar.url(:thumb) %><br>
-			Name: <%= chef.fname %>
-			<%= chef.lname %> <br>
-			Specialty: <%= chef.specialty %> <br>
-			<%= link_to "chef", chefs_show_path(chef) %>
-		<% end %>
-	</div>
-    <div class="col-md-3">.col-md-4</div>
+    <% @chefs.each do |chef| %>
+	    <div class="col-md-6", id="chefgallery">
+	    	<div class="chefcard">
+			    <br>
+				<%= image_tag chef.avatar.url(:thumb) %><br>
+				Name: <%= chef.fname %>
+				<%= chef.lname %> <br>
+				Specialty: <%= chef.specialty %> <br>
+				<%= link_to "Learn more...", chefs_show_path(chef) %>
+			</div>
+		</div>
+	<% end %>
 </div>
 		
