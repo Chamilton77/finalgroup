@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/index'
-
-  get 'chefs/show'
-
   devise_for :chefs, controllers: {
   		sessions: 'chefs/sessions',
         registrations: 'chefs/registrations'
@@ -11,6 +7,8 @@ Rails.application.routes.draw do
   		sessions: 'users/sessions',
         registrations: 'users/registrations'
       }
+      get '/chefs/:id/show' => "chefs#show", as: "chefs_show"
+      get '/users/index' => "users#index"
       resources :chef_reviews
    resources :requests
 	 root to: "home#index"

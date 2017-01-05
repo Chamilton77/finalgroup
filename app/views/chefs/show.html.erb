@@ -13,126 +13,131 @@
 	  </div>
 	</div>
 	<br>
-	<div class="modal reqmodal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
-	     aria-labelledby="myModalLabel" aria-hidden="true">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <!-- Modal Header -->
-	            <div class="modal-header">
-	                <button type="button" class="close" 
-	                   data-dismiss="modal">
-	                       <span aria-hidden="true">&times;</span>
-	                       <span class="sr-only">Close</span>
-	                </button>
-	                <h4 class="modal-title" id="myModalLabel">
-	                    Chef Request
-	                </h4>
-	            </div>
-	            
-	            <!-- Modal Body -->
-	            <div class="modal-body">
-	                
-	                <form class="form-horizontal" role="form">
-	                  <div class="form-group">
-	                    <label  class="col-sm-2 control-label"
-	                              for="inputEmail3">Email</label>
-	                    <div class="col-sm-10">
-	                        <input type="email" class="form-control" 
-	                        id="inputEmail3" placeholder="Email"/>
-	                    </div>
-	                  </div>
-	                  <div class="form-group">
-	                    <label class="col-sm-2 control-label"
-	                          for="guests" >Guests</label>
-	                    <div class="col-sm-10">
-	                        <input type="" class="form-control"
-	                            id="guests" placeholder="How many guests"/>
-	                    </div>
-	                  </div>
-	                  <div class="form-group">
-	                    <label class="col-sm-2 control-label"
-	                          for="foodtype" >Food</label>
-	                    <div class="col-sm-10">
-	                        <input type="" class="form-control"
-	                            id="foodtype" placeholder="What would you like to eat?"/>
-	                    </div>
-	                  </div>
-	                  <div class="form-group">
-	                    <label class="col-sm-2 control-label"
-	                          for="date" >Date</label>
-	                    <div class="col-sm-10">
-	                        <input type="Date" class="form-control"
-	                            id="date" placeholder=""/>
-	                    </div>
-	                  </div>	                  
-	                </form>     
-	            </div>
-	            <!-- Modal Footer -->
-	            <div class="modal-footer">
-	                <button type="button" class="btn btn-default"
-	                        data-dismiss="modal">
-	                            Close
-	                </button>
-	                <button type="button" class="btn btn-primary">
-	                    Send request
-	                </button>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<br>
-	<br>
-		<div class="modal revmodal fade" id="myModalHorizontal revmod" tabindex="-1" role="dialog" 
-	     aria-labelledby="myModalLabel" aria-hidden="true">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <!-- Modal Header -->
-	            <div class="modal-header">
-	                <button type="button" class="close" 
-	                   data-dismiss="modal">
-	                       <span aria-hidden="true">&times;</span>
-	                       <span class="sr-only">Close</span>
-	                </button>
-	                <h4 class="modal-title" id="myModalLabel">
-	                    Chef Review
-	                </h4>
-	            </div>
-	            
-	            <!-- Modal Body -->
-	            <div class="modal-body">
-					<%= form_for @review, remote: true do |f| %>
-						<%= f.hidden_field :user_id, value: @user.id %>
-						<%= f.label :description, "Write A Review!" %>
-						<%= f.text_area :description %>
-						<%= f.submit %>
-					<% end %>
-	            </div>
-	            <!-- Modal Footer -->
-	            <div class="modal-footer">
-	                <button type="button" class="btn btn-default"
-	                        data-dismiss="modal">
-	                            Close
-	                </button>
-	                <button type="button" class="btn btn-primary">
-	                    Send Review
-	                </button>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<br>
-	<div id="butdiv">
-		<div id=butndiv>
-			<button id="request">Make A Request</button>
+	<% if current_user %>
+		<div class="modal reqmodal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
+		     aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <!-- Modal Header -->
+		            <div class="modal-header">
+		                <button type="button" class="close" 
+		                   data-dismiss="modal">
+		                       <span aria-hidden="true">&times;</span>
+		                       <span class="sr-only">Close</span>
+		                </button>
+		                <h4 class="modal-title" id="myModalLabel">
+		                    Chef Request
+		                </h4>
+		            </div>
+		            
+		            <!-- Modal Body -->
+		            <div class="modal-body">
+		                
+		                <form class="form-horizontal" role="form">
+		                  <div class="form-group">
+		                    <label  class="col-sm-2 control-label"
+		                              for="inputEmail3">Email</label>
+		                    <div class="col-sm-10">
+		                        <input type="email" class="form-control" 
+		                        id="inputEmail3" placeholder="Email"/>
+		                    </div>
+		                  </div>
+		                  <div class="form-group">
+		                    <label class="col-sm-2 control-label"
+		                          for="guests" >Guests</label>
+		                    <div class="col-sm-10">
+		                        <input type="" class="form-control"
+		                            id="guests" placeholder="How many guests"/>
+		                    </div>
+		                  </div>
+		                  <div class="form-group">
+		                    <label class="col-sm-2 control-label"
+		                          for="foodtype" >Food</label>
+		                    <div class="col-sm-10">
+		                        <input type="" class="form-control"
+		                            id="foodtype" placeholder="What would you like to eat?"/>
+		                    </div>
+		                  </div>
+		                  <div class="form-group">
+		                    <label class="col-sm-2 control-label"
+		                          for="date" >Date</label>
+		                    <div class="col-sm-10">
+		                        <input type="Date" class="form-control"
+		                            id="date" placeholder=""/>
+		                    </div>
+		                  </div>	                  
+		                </form>     
+		            </div>
+		            <!-- Modal Footer -->
+		            <div class="modal-footer">
+		                <button type="button" class="btn btn-default"
+		                        data-dismiss="modal">
+		                            Close
+		                </button>
+		                <button type="button" class="btn btn-primary">
+		                    Send request
+		                </button>
+		            </div>
+		        </div>
+		    </div>
 		</div>
-		<div id=butndiv>
-			<button id="newreview">Leave a Review</button>
+		<br>
+		<br>
+			<div class="modal revmodal fade" id="myModalHorizontal revmod" tabindex="-1" role="dialog" 
+		     aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <!-- Modal Header -->
+		            <div class="modal-header">
+		                <button type="button" class="close" 
+		                   data-dismiss="modal">
+		                       <span aria-hidden="true">&times;</span>
+		                       <span class="sr-only">Close</span>
+		                </button>
+		                <h4 class="modal-title" id="myModalLabel">
+		                    Chef Review
+		                </h4>
+		            </div>
+		            
+		            <!-- Modal Body -->
+		            <div class="modal-body">
+						<%= form_for @review, remote: true do |f| %>
+							<%= hidden_field_tag :chef_id, @chef.id %>
+							<%= f.hidden_field :user_id, value: @user.id %>
+							<%= f.label :description, "Write A Review!" %>
+							<%= f.text_area :description %>
+							<%= f.submit %>
+						<% end %>
+		            </div>
+		            <!-- Modal Footer -->
+		            <div class="modal-footer">
+		                <button type="button" class="btn btn-default"
+		                        data-dismiss="modal">
+		                            Close
+		                </button>
+		                <button type="button" class="btn btn-primary">
+		                    Send Review
+		                </button>
+		            </div>
+		        </div>
+		    </div>
 		</div>
-	</div>
+		<br>
+		<div id="butdiv">
+			<div id=butndiv>
+				<button id="request">Make A Request</button>
+			</div>
+			<div id=butndiv>
+				<button id="newreview">Leave a Review</button>
+			</div>
+		</div>
+		<% end %>
 	<br>
 	<div class="row" id="rows">
 	  <div class="col-md-10" id="reviews">
-
+		<% @chef.chef_reviews.each do |chef_review|%>
+			<%= render "chef_reviews/chef_review", chef_review: chef_review %>
+		<% end %>
 	  </div>
 	</div>
 </div>

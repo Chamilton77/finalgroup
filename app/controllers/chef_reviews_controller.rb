@@ -10,7 +10,7 @@ class ChefReviewsController < ApplicationController
   end
 
   def create
-    @chef = current_chef
+    @chef = Chef.find(params[:chef_id])
     @review = @chef.chef_reviews.new(review_params)
     respond_to do |format|
       if @review.save

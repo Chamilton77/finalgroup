@@ -4,7 +4,7 @@ class ChefsController < ApplicationController
 
   def show
   	@user = current_user
-  	@chef = current_chef
+  	@chef = Chef.find(params[:id])
   	@review = ChefReview.new
   end
   def new
