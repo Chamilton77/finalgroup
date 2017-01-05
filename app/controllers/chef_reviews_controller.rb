@@ -3,12 +3,20 @@ class ChefReviewsController < ApplicationController
   end
 
   def new
+    @review = ChefReview.new
   end
 
   def edit
   end
 
   def create
+    @chef = current_chef
+    @review = @chef.chef_reviews.new(review_params)
+    respond_to do |format|
+      if @review.save
+        format.js
+      end
+    end
   end
 
   def show
@@ -19,4 +27,11 @@ class ChefReviewsController < ApplicationController
 
   def destroy
   end
+
+  private 
+  def review_params
+    params.require(:chef_review).permit(:chef_id, :user_id, :description)
+  end
 end
+
+

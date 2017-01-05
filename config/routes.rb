@@ -1,14 +1,6 @@
 Rails.application.routes.draw do
   get 'users/index'
 
-  get 'users/show'
-
-  get 'contacts/index'
-
-  get 'contacts/show'
-
-  get 'chefs/index'
-
   get 'chefs/show'
 
   devise_for :chefs, controllers: {
@@ -19,6 +11,7 @@ Rails.application.routes.draw do
   		sessions: 'users/sessions',
         registrations: 'users/registrations'
       }
+      resources :chef_reviews
    resources :requests
 	 root to: "home#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
