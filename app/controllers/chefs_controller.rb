@@ -3,9 +3,11 @@ class ChefsController < ApplicationController
   end
 
   def show
+  	@user = current_user
   	@chef = current_chef
+  	@review = ChefReview.new
   end
   def new
-  	@review = Review.new
+  	@review = ChefReview.new
   end
 end
