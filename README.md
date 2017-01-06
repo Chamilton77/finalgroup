@@ -1,24 +1,11 @@
-# README
+To run this app you will need to have or do the following.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Have ruby version 2.3.3
 
-Things you may want to cover:
+* run db:migrate
 
-* Ruby version
+* run rails s in the terminal and go to local host:3000
 
-* System dependencies
+* to see everything you need to create a chef and user account
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
