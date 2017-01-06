@@ -93,7 +93,6 @@ body{
 }
 #reviews{
 	background: rgba(170, 232, 129, 0.7);
-	height: 300px; 
 	margin-left: 120px;
 	margin-bottom: 50px;
 }
@@ -183,6 +182,18 @@ body{
 	text-align: center;
 	margin-left: 210px;
 
+}
+.crajax{
+	width: 80%;
+	background-color: lightblue;
+	margin-left: 100px;
+	border-radius: 15px;
+}
+#reviewdes{
+	font-size: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 15px;
 }
 
 
